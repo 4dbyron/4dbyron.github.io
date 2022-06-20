@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1440px;
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 2px 6px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 700;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(4px);
+}
+
+
+header {
+    background-image: url("./assets/images/bg-hero-desktop.svg");
+    padding: 40px 60px;
+}
+
+nav {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.btn_trial {
+    margin-left: auto;
+    width: 160px;
+    height: 40px;
+    background-color: #fff;
+    font-size: 0.75rem;
+}
+
+.info_main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_main > article {
+    margin-top: 30px;
+}
+
+.info_main > article h1 {
+    font-size: 2.4rem;
+    width: 480px;
+}
+
+.info_main > article p {
+    width: 540px;
+    line-height: 24px;
+}
+
+.info_main > img {
+    width: 600px;
+}
+
+.btn_get_started {
+    height: 45px;
+    width: 240px;
+    margin-top: 10px;
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(0, 0%, 100%);
+}
+
+ion-icon {
+    color: hsl(0, 0%, 100%);
+    font-size: x-large;
+}
+
+@media only screen and (max-width: 1439px) {
+    header {
+        padding: 40px 20px;
+        background-image: url("./assets/images/bg-hero-mobile.svg");
+    }
+
+    .container {
+        width: 375px;
+    }
+
+    nav {
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+
+    .logo--img {
+        height: 20px;
+        margin: auto 0;
+    }
+
+    .btn_trial {
+        width: 120px;
+        height: 30px;
+    }
+
+    .info_main {
+        display: block;
+        padding: 15px;
+    }
+
+    .info_main > article {
+        display: grid;
+        justify-content: center;
+    }
+
+    .info_main > article h1 {
+        width: auto;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    .info_main > article p {
+        width: auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .btn_get_started {
+        margin: auto;
+    }
+
+    .info_main > img {
+        width: 100%;
+        margin-top: 60px;
+    }
+}
+
+.body {
+    padding: 60px 80px;
+}
+
+.card {
+    display: flex;
+    padding: 60px 80px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    justify-content: space-between;
+    box-shadow: rgba(60, 64, 67, 0) 0 1px 2px 0, rgba(60, 64, 67, 0.1) 0 2px 6px 2px;
+}
+
+.card:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.card > article {
+    width: 440px;
+}
+
+.card > article h1 {
+    font-size: 2rem;
+}
+
+.card > article p {
+    line-height: 24px;
+}
+
+.card > img {
+    width: 360px;
+}
+
+@media only screen and (max-width: 1439px) {
+    .body {
+        padding: 60px 15px;
+    }
+
+    .card {
+        padding: 28px;
+        justify-content: initial;
+        flex-direction: column-reverse;
+    }
+
+    .card:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .card > img {
+        width: 100%;
+    }
+
+    .card > article {
+        width: auto;
+        margin-top: 20px;
+    }
+
+    .card > article h1 {
+        width: auto;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    .card > article p {
+        width: auto;
+        text-align: center;
+    }
+}
+
+
+.call-to-action {
+    position: absolute;
+    display: flex;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    margin: auto;
+    flex-direction: column;
+    width: fit-content;
+    padding: 40px 70px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px, rgba(0, 0, 0, 0.24) 0 1px 2px;
+}
+
+.call-to-action > h1 {
+    margin-bottom: 30px;
+}
+
+.btn_call_to_acton {
+    margin: auto;
+    height: 65px;
+    width: 360px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1439px) {
+    .call-to-action {
+        padding: 40px 30px;
+    }
+
+    .call-to-action > h1 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .btn_call_to_acton {
+        width: 240px;
+        height: 40px;
+        font-size: 0.75rem;
+    }
+}
+
+.foot_section {
+    background-color: hsl(192, 100%, 9%);
+    color: hsl(208, 11%, 55%);
+    margin-top: 170px;
+    padding: 180px 60px 60px 60px;
+}
+
+.foot_logo {
+    margin-bottom: 40px;
+}
+
+.foot_container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 150px;
+}
+
+.foot_details {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: baseline;
+}
+
+.foot_details > img {
+    margin-right: 60px;
+}
+
+.foot_container > div:nth-child(2),
+.foot_container > div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+}
+
+.foot_link {
+    color: #fff;
+    text-decoration: none;
+    height: fit-content;
+    margin-bottom: 20px;
+}
+
+.foot_link:hover {
+    text-decoration: underline;
+}
+
+#social_media {
+    display: flex;
+    flex-direction: row;
+}
+
+.icons_social_media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.icons_social_media:hover {
+    border-color: hsl(322, 100%, 66%);
+}
+
+footer {
+    float: right;
+    text-align: right;
+}
+
+
+@media only screen and (max-width: 1439px) {
+    .foot_section {
+        display: block;
+        margin-top: 120px;
+        padding: 140px 20px 40px 20px;
+    }
+
+    .foot_container {
+        display: block;
+    }
+
+    .foot_logo {
+        margin-bottom: 20px;
+    }
+
+    .foot_details {
+        margin-bottom: auto;
+    }
+
+    .foot_details > img {
+        margin-right: 20px;
+        position: relative;
+        top: 5px;
+    }
+
+    .foot_details:last-child {
+        margin-bottom: 40px;
+    }
+
+    #social_media {
+        justify-content: center;
+        margin: 40px 0;
+    }
+
+    footer {
+        float: none;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 0.75rem;
+    }
+}
